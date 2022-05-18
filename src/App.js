@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { commerce } from './lib/commerce';
 import { Products, Navbar, Cart } from './components';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-
+console.log("Hola")
 const App = () => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState({});
@@ -26,7 +26,7 @@ const App = () => {
     fetchCart();
   }, []);
 
-
+  
   return (
     <Router>
       <div>
